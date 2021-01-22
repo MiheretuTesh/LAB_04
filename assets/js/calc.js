@@ -29,12 +29,12 @@ else if(choice==="subtraction"){
     alert(sub(number1,number2))
 }
 else if(choice==="division"){
-    if(number1!=0){
+    if(number2!=0){
         console.log(divide(number1,number2))
         alert(divide(number1,number2))
     }
     else{
-        alert("Nominator is zero")
+        alert("Denominator is zero")
     }
 }
 else{

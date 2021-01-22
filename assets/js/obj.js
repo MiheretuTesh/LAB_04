@@ -14,7 +14,8 @@ let personProfile = {
         if (tempAge >= 18) { this.isEligibleToVote = true; } else { this.isEligibleToVote = false; }
     },
     calcBmi: function() {
-        this.weight/Math.pow(this.height,2);
+        this.bmi = this.weight/Math.pow(this.height,2);
+        return this.bmi;
     }
 };
 
@@ -50,6 +51,15 @@ personProfile.checkVote();
     });
     // call bmi calculator 
     personProfile.calcBmi();
+    if(personProfile.bmi<18.5){
+        console.log("Underweight")
+    }else if(personProfile.bmi<24.9){
+        console.log("Normal")
+    }else if(personProfile.bmi<29.9){
+        console.log("Overweight")
+    }else{
+        console.log("Obese")
+    }
     console.log("**************************************************************")
 
 })();
