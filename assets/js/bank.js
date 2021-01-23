@@ -37,7 +37,6 @@ if(choice=="deposit"){
     balanceAmount = prompt("Enter account Number");
     balance(balanceAmount);
 }
-
 function balance(acct){
     console.log(accounts[acct])
     alert("Account Number: "+ acct + "\nBalance: "+accounts[acct])
@@ -85,3 +84,4 @@ function transfer(acc, acct, amount){
         alert("No")
     }
 }
+
